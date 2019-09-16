@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>s_dash</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<header class="header w3-black w3-padding-16">
+        <a href="#" class="w3-button w3-black ">logout</a>
+</header>
+<style>
+    body, html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+  
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("");
+      min-height: 75%;
+    }
+  
+    .menu {
+      display: none;
+    }
+  </style>
+<body>
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+        <h3 class="w3-bar-item" style="font-family: 'Gill Sans'">Welcome</h3>
+        <h4 class="w3-bar-item w3-center">{Users session Name}<br>GRADE: {A}</h4>
+        <a class="w3-bar-item w3-button" href="#">Profile</a>
+        <a class="w3-bar-item w3-button" href="#">News Brief</a>
+        <a class="w3-bar-item w3-button" href="#">Log Out</a>
+    </div>
+      
+    <!-- Page Content -->
+    <div style="margin-left:15%" class="w3-container w3-text-brown">
+    <h1>University Course Selection</h1>
+    <form class="w3-container w3-card-4" action="/action_page.php">
+        <select class="w3-select" name="option">
+        <option value="" disabled selected>Choose a University of choice</option>
+        <option value="1">University of Nairobi</option>
+        <option value="2">Kenyatta University</option>
+        <option value="3">Strathmore University</option>
+        </select>
+        <p><button class="w3-btn w3-teal">Select</button></p>
+    </form>
+    <div class="w3-container">
+            <h2 class="w3-center"><u>{uni selected above}</u></h2>
+          
+            <table class="w3-table-all">
+              <thead>
+                <tr class="w3-light-grey">
+                  <th>Course ID</th>
+                  <th>Course Title</th>
+                  <th>Requirements</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+              </tr>
+              <tr>
+                <td>Adam</td>
+                <td>Johnson</td>
+                <td>67</td>
+              </tr>
+              <tr>
+                <td>Bo</td>
+                <td>Nilson</td>
+                <td>35</td>
+              </tr>
+            </table>
+          </div>
+    </div>
+</body>
+
+</html>
